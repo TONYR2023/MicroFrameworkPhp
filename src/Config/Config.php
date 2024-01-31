@@ -6,7 +6,7 @@ abstract class Config
 {
     const DBNAME = 'tp';
 
-    const DBHOST = 'localhost:8889';
+    const DBHOST = 'localhost:3306';
     const DBUSER = 'tp';
     const DBPWD = 'root';
 

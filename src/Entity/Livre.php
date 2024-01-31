@@ -66,7 +66,7 @@ class Livre
     /**
      * Get la valeur de l'id_genre
      */ 
-    public function getIdGenre()
+    public function getId_genre()
     {
         return $this->id_genre;
     }
@@ -76,7 +76,7 @@ class Livre
      *
      * @return  self
      */ 
-    public function setIdGenre($id_genre)
+    public function setId_genre($id_genre)
     {
         $this->id_genre = $id_genre;
 
