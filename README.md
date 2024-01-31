@@ -3,8 +3,8 @@
 Votre exercice est de le compléter le code de ce Micro Framework
 pour qu'il puisse répondre à la demande suivante :
 
-Nous avons besoin d'une page qui affiche la liste des livres
-et des fonctionnalités de recherche et de tri. Il sera possible
+Nous avons besoin: 
+- d'une page qui affiche la liste des livres et des fonctionnalités de recherche et de tri. Il sera possible
 de rechercher un livre par son titre ou son auteur et de trier par genre.
 Il sera sous forme de tableau.
 Puis, nous aurons:
