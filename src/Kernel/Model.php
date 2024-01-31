@@ -19,7 +19,7 @@ class Model extends PDO
             );
         } catch (\PDOException $e) {
             echo 'Connexion échouée : ' . $e->getMessage();
-            header('Location: ./');
+//            header('Location: ./');
         }
     }
 
@@ -37,6 +37,12 @@ class Model extends PDO
     public function readAll(string $entity)
     {
         $query = $this->query("SELECT * FROM " . $entity);
+        return $query->fetchAll(PDO::FETCH_CLASS, 'Poo\Project\Entity\\' . ucfirst($entity));
+    }
+
+    public function getByAttributeLike(string $entity, string $attribute, $value)
+    {
+        $query = $this->query("SELECT * FROM " . $entity . " WHERE " . $attribute . " LIKE '%" . $value . "%'");
         return $query->fetchAll(PDO::FETCH_CLASS, 'Poo\Project\Entity\\' . ucfirst($entity));
     }
 

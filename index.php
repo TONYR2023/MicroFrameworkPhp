@@ -4,4 +4,8 @@ use Poo\Project\Kernel\Dispatcher;
 
 include_once('vendor/autoload.php');
 
-Dispatcher::dispatch();
+try {
+    Dispatcher::dispatch();
+} catch (Exception $e) {
+    echo $e->getMessage();
+}
