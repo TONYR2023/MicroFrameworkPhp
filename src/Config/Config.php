@@ -5,8 +5,8 @@ namespace Poo\Project\Config;
 abstract class Config
 {
     const DBNAME = 'tp';
-//    const DBHOST = 'localhost:3306';
-    const DBHOST = 'localhost:3307';
+
+    const DBHOST = 'localhost:8889';
     const DBUSER = 'tp';
     const DBPWD = 'root';
 
