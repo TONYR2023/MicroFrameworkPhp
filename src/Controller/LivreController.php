@@ -15,12 +15,19 @@ class LivreController extends AbstractController
 
     public function addLivre()
     {
+
+        $message = '';
         if (isset($_POST['titre']) && isset($_POST['auteur']) && isset($_POST['id_genre'])) 
         {
             Model::getInstance()->save('livre', $_POST);
             header('location: ?controller=LivreController&method=livre');
+            header('location: ?controller=LivreController&method=livre');
         }
        
+    }
+    public function afficherNomGenre()
+    {
+        $this->render('livres', 'Mes livres', ['livres' => $livres]);
     }
    
 
