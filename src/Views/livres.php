@@ -15,7 +15,7 @@
                 <th scope="row"><?php echo $livre->getId(); ?></th>
                 <td><?php echo $livre->getTitre(); ?></td>
                 <td><?php echo $livre->getAuteur(); ?></td>
-                <td><?php echo $livre->getId_genre(); ?></td>
+                <td><?php echo $livre->getGenre()->getNom(); ?></td>
             </tr>
         <?php endforeach; ?>
     </tbody>
