@@ -1,7 +1,7 @@
 <?php
 
 namespace Poo\Project\Entity;
-
+use Poo\Project\Kernel\Model;
 
 class Livre
 {
@@ -81,6 +81,11 @@ class Livre
         $this->id_genre = $id_genre;
 
         return $this;
+    }
+
+    public function getGenre() : Genre
+    {
+        return $genre = Model::getInstance()->getById('genre', $this->id_genre);
     }
 
 
