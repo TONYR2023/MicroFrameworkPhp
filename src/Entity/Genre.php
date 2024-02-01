@@ -5,8 +5,10 @@ namespace Poo\Project\Entity;
 class Genre
 {
 
-    private int $id;
-    private string $nom;
+private int $id;
+
+private string $nom;
+
 
 
 /**
