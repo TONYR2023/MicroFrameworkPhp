@@ -5,47 +5,49 @@ namespace Poo\Project\Entity;
 class Genre
 {
 
-    private int $id;
-    private string $nom;
+private int $id;
+
+private string $nom;
 
 
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
 
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
+/**
+ * Get la valeur de l'id
+ */ 
+public function getId()
+{
+return $this->id;
+}
 
-        return $this;
-    }
+/**
+ * Set la valeur de l'id
+ *
+ * @return  self
+ */ 
+public function setId($id)
+{
+$this->id = $id;
 
-    /**
-     * Get the value of nom
-     */ 
-    public function getNom()
-    {
-        return $this->nom;
-    }
+return $this;
+}
 
-    /**
-     * Set the value of nom
-     *
-     * @return  self
-     */ 
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
+/**
+ * Get la valeur du nom
+ */ 
+public function getNom()
+{
+return $this->nom;
+}
 
-        return $this;
-    }
+/**
+ * Set la valeur du nom
+ *
+ * @return  self
+ */ 
+public function setNom($nom)
+{
+$this->nom = $nom;
+
+return $this;
+}
 }
