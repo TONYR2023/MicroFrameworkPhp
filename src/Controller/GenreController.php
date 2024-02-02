@@ -14,4 +14,14 @@ class GenreController extends AbstractController{
     }
 
 
+    public function LivresParGenres($genreId)
+    {
+
+        $livres = Model::getInstance()->readAll('livre', ['genre_id' => $genreId]);
+        $genre = Model::getInstance()->getByAttribute('genre', $genreId);
+        $this->render('livres_par_genres', 'Livres par genre', ['livres' => $livres, 'genre' => $genre]);
+    
+    }
+
+    
 }

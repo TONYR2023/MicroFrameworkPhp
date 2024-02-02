@@ -1,22 +1,26 @@
-<div class="card">
-  <div class="card-body">
-  <table class="table">
-    <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">NOM</th>
-            
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($genres as $genre): ?>
-            <tr>
-                <th scope="row"><?php echo $genre->getId(); ?></th>
-                <td><?php echo $genre->getNom(); ?></td>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-</div>
-</div>
 
-</br>
+
+<?php foreach ($genres as $genre): ?>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <form action="?controller=GenreController&method=genre" method="get">
+            <input type="hidden" name="id" value="<?php echo $genre->getId(); ?>">
+            <button class="btn btn-secondary" type="submit" role="search">
+            
+                <?php echo $genre->getNom(); ?>
+               
+            </button>
+        </form>
+    </div>
+<?php endforeach; ?>
+<div class="btn-group" role="group" aria-label="Basic example">
+        <form action="?controller=GenreController&method=LivreParGenres" method="get">
+            <input type="hidden" name="id" value="<?php echo $genre->getId(); ?>">
+            <button class="btn btn-secondary" type="submit" role="search">
+            
+                <?php echo $genre->getNom(); ?>
+               
+            </button>
+            </button>
+        </form>
+    </div>
+
