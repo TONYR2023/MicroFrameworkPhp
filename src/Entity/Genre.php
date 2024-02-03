@@ -6,7 +6,7 @@ class Genre
 {
 
     private int $id;
-    private int $nom;
+    private string $nom;
 
 
     /**
