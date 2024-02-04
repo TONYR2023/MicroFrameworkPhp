@@ -49,10 +49,13 @@ class LivreController extends AbstractController
         {
             Model::getInstance()->save('livre', $_POST);
             header('location: ?controller=LivreController&method=livre');
-            header('location: ?controller=LivreController&method=livre');
+                
         }
        
     }
+
+
+    
     public function afficherNomGenre()
     {
         $this->render('livres', 'Mes livres', ['livres' => $livres]);
