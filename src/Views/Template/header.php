@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand">Mon site</a>
                 <div class="d-flex gap-2 list-unstyled align-items-center justify-content-center">
-                        <a class="d-flex btn btn-dark" role="search" href="?controller=SearchController&method=index">Accueil</a>
+                        <a class="d-flex btn btn-dark" role="search" href="?controller=Controller&method=index">Accueil</a>
                 </div>
                 <div class="d-flex gap-2 list-unstyled align-items-center justify-content-center">
                         <a class="d-flex btn btn-dark" role="search" href="?controller=LivreController&method=livre">Rechercher des livres</a>
