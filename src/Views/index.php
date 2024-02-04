@@ -1,11 +1,10 @@
-<div class="card">
-  <div class="card-body">
-    <div class="" > <h2>Bienvenue sur notre site MICRO-FRAMEWORK</h2></div>
-  </div>
-</div>
-<div class="d-flex gap-2 list-unstyled align-items-center justify-content-center">
-                        <a class="d-flex btn btn-dark" role="search" href="?controller=LivreController&method=livre">Rechercher des livres</a>
-                </div>
-                <div class="d-flex gap-2 list-unstyled align-items-center justify-content-center">
-                        <a class="d-flex btn btn-dark" role="search" href="?controller=GenreController&method=genre">Rechercher livres par genres</a>
-                </div>
+<H2>BIENVENUE SUR LE MICRO-FRAMEWORK</H2>
+<a href='?controller=LivreController&method=livre'>
+    <h2>Livres</h2>
+</a>
+<a href='?controller=AuteurController&method=auteurs'>
+    <h2>Auteurs</h2>
+</a>
+<a href='?controller=GenreController&method=genre'>
+    <h2>Genres</h2>
+</a>

@@ -143,4 +143,6 @@ class Model extends PDO
         $sql = "DELETE from $entity WHERE id = '$id'";
         $this->exec($sql);
     }
+
+    
 }

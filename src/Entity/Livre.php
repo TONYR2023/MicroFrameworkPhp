@@ -85,7 +85,7 @@ class Livre
 
     public function getGenre() : Genre
     {
-        return $genre = Model::getInstance()->getById('genre', $this->id_genre);
+        return Model::getInstance()->getById('genre', $this->id_genre);
     }
 
 
