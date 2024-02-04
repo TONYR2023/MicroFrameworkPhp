@@ -52,9 +52,6 @@ class LivreController extends AbstractController
         }
        
     }
-    public function afficherNomGenre()
-    {
-        $this->render('livres', 'Mes livres', ['livres' => $livres]);
-    }
+   
 
 }

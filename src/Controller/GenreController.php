@@ -5,7 +5,8 @@ namespace Poo\Project\Controller;
 use Poo\Project\Kernel\AbstractController;
 use Poo\Project\Kernel\Model;
 
-class GenreController extends AbstractController{
+class GenreController extends AbstractController
+{
 
     public function Genre()
     {
@@ -13,15 +14,19 @@ class GenreController extends AbstractController{
         $this->render('genres', 'Mes genres', ['genres' => $genres]);
     }
 
-
-    public function LivresParGenres($genreId)
+    public function displayGenre()
     {
 
-        $livres = Model::getInstance()->readAll('livre', ['genre_id' => $genreId]);
-        $genre = Model::getInstance()->getByAttribute('genre', $genreId);
-        $this->render('livres_par_genres', 'Livres par genre', ['livres' => $livres, 'genre' => $genre]);
-    
+        $genre = Model::getInstance()->getById('genre', $_GET['id']);
+        $livresParGenre = Model::getInstance()->getByAttribute('livre', ['id_genre' => $_GET['id']]);
+
+        $variables = [
+            'livres' => $livresParGenre,
+        ];
+
+        $this->render('genre', 'Livre par genres', $variables);
     }
 
-    
+
 }
+
