@@ -16,26 +16,19 @@ class LivreController extends AbstractController
     public function displayLivre()
     {
         $livre = Model::getInstance()->getById('livre', $_GET['id']);
-        $auteur = Model::getInstance()->getByAttribute('livre', ['auteur' => $livre->getAuteur()]);
-        $this->render('livre', 'Recherche par livres', ['livres' => $livre,
-            'auteur' => $auteur[0]
-    ]);
 
-
-    /*    if (empty($auteur)) {
-            echo "pas d'auteur pour ce livre";
-        } else {
-            $this->render('livre', $livre->getTitre(), [
-                'livre' => $livre,
-                'auteur' => $auteur[0],
-            ]);
-        }
-    */
     
+        $titre = $livre->getTitre();
+        $auteur = $livre->getAuteur();
+        $genre = $livre->getGenre();
+
+        $this->render('livre', 'Recherche par titre', [
+            'livre' => $livre,
+            'titre' => $titre,
+            'auteur' => $auteur,
+            'genre' => $genre,
+        ]);
     }
-    
-    
-
 
     public function formulaireLivre()
 {
@@ -53,8 +46,6 @@ class LivreController extends AbstractController
         }
        
     }
-
-
     
     public function afficherNomGenre()
     {

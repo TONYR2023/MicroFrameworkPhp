@@ -20,6 +20,7 @@
                 
             </select>
         </div>
-        <button type="submit" class="btn btn-primary">Ajouter le livre</button>
+        <br>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
     </form>
 </div>
