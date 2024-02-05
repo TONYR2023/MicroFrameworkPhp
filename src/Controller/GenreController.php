@@ -4,8 +4,8 @@ namespace Poo\Project\Controller;
 
 use Poo\Project\Kernel\AbstractController;
 use Poo\Project\Kernel\Model;
-
 class GenreController extends AbstractController{
+
 
 
     public function Genre()
@@ -51,6 +51,3 @@ class GenreController extends AbstractController{
     }
 }
 
-
-    
-}

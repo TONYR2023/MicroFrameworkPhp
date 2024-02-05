@@ -1,4 +1,3 @@
-
 <h2> Bienvenue sur le MicoFramework de Maxime et Anthony </h2>
 <a href='?controller=LivreController&method=livre'>
     <h2> Livres </h2></a>
